@@ -57,3 +57,55 @@ footer{background:#111;color:#fff;border:0;font:700 12px "Helvetica Neue",Helvet
 @media(max-width:800px){.hero{grid-template-columns:1fr}.hero>div:first-child{padding:52px 0}.art{display:none}.grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:580px){.top{height:72px}.brand{font-size:31px}.nav{gap:9px}.nav .btn{padding:10px;font-size:10px}.route-strip .wrap{gap:9px;font-size:10px}.route-strip .route-dot{width:22px;height:22px;font-size:12px}.route-arrow{font-size:20px}.hero h1{font-size:57px}.grid{grid-template-columns:1fr}.sectionbar{align-items:stretch}.sectionbar h2{font-size:31px}.cover{height:80px}.card{min-height:300px}.panel{box-shadow:5px 5px 0 #ffca00}}
 
+/* Helvetica poster direction, based on the owner's reference image. */
+*,*::before,*::after{font-family:Helvetica,sans-serif!important}
+:root{--paper:#eff0f2;--ink:#070707;--muted:#333;--line:#101010;--soft:#eff0f2;--green:#070707;--gold:#fbc733}
+body{background:var(--paper);color:#070707}
+header{background:var(--paper);color:#070707;border:0}
+.top{height:92px;align-items:center;border-bottom:0}
+.brand{color:#070707;font-size:32px;font-weight:800;letter-spacing:-.07em}
+.brand i{color:#070707}
+.nav a,.nav .linkbtn{color:#070707;font-size:12px;font-weight:700;letter-spacing:-.02em}
+.nav a:hover,.nav .linkbtn:hover{color:#d6001c}
+.btn{background:#080808;color:#fff;font-weight:700;border-radius:0}
+.btn:hover{background:#d6001c}
+.hero{display:block;background:transparent;border:0;padding:26px 0 96px;min-height:570px}
+.hero>div:first-child{padding:0}
+.hero .eyebrow{font-size:12px;letter-spacing:-.01em;text-transform:none}
+.hero .eyebrow:before{display:none}
+.hero h1{font-size:clamp(62px,9.2vw,138px);font-weight:800;letter-spacing:-.078em;line-height:.82;margin:20px 0 20px;max-width:1120px;overflow-wrap:anywhere}
+.hero h1 em{font-style:normal}
+.hero p{font-size:clamp(17px,2vw,24px);line-height:1.12;letter-spacing:-.035em;color:#111;max-width:650px;margin:29px 0 0;font-weight:700}
+.owner{font-size:13px;letter-spacing:-.01em;margin-top:16px;text-transform:none;color:#111}
+.art{display:none}
+.poster-routes{display:flex;flex-wrap:wrap;gap:8px;margin-top:25px;max-width:390px}
+.poster-routes .route-dot{width:52px;height:52px;font-size:34px;font-weight:700}
+.poster-routes .route-dot.gray{background:#919399}.poster-routes .route-dot.yellow{background:#fbc733}.poster-routes .route-dot.red{background:#d90823}.poster-routes .route-dot.purple{background:#84284e}
+.sectionbar{border-top:5px solid #090909;border-bottom:0;padding:18px 0 20px;margin:0}
+.sectionbar .eyebrow{font-size:12px;letter-spacing:0;text-transform:none}
+.sectionbar h2{font-size:clamp(36px,5vw,62px);letter-spacing:-.07em;line-height:.92}
+.search{background:transparent;border:0;border-bottom:2px solid #111;color:#111;font-weight:700}
+.grid{display:block;padding-bottom:90px}
+.card{display:grid;grid-template-columns:95px 1fr;min-height:0;background:transparent;border:0;border-top:2px solid #111;box-shadow:none}
+.cover{background:transparent!important;border:0;height:auto;align-items:flex-start;padding:17px 0}
+.cover:before{width:58px;height:58px;font-size:35px}
+.cover:after{display:none}
+.cardbody{padding:16px 0 20px}
+.meta{font-size:12px;letter-spacing:0;color:#111}
+.card h3{font-size:clamp(29px,4vw,51px);font-weight:800;line-height:.95;letter-spacing:-.065em;margin:8px 0 10px}
+.card p{font-size:15px;line-height:1.35;color:#222;max-width:700px}
+.cardfoot{border:0;padding:0;font-size:12px}
+.linkbtn{color:#111;font-size:12px;font-weight:800;letter-spacing:-.02em}
+footer{background:transparent;color:#111;border-top:5px solid #111;font-size:12px;padding:20px 0}
+.corner-mark{background:transparent;color:#111;box-shadow:none;border-radius:0;font-size:12px;padding:12px}
+.overlay{background:#111d}
+.panel{background:#eff0f2;border:0;box-shadow:none}
+.panelhead{border-bottom:4px solid #111}
+.panelhead h2{font-weight:800;letter-spacing:-.06em}
+.field,.editor,.toolbar{border-color:#111;border-width:2px}
+.toolbar{background:#e0e1e3}
+.article h1{font-weight:800;letter-spacing:-.07em;line-height:.9}
+.attachment{background:#fbc733;color:#111}
+@media(max-width:800px){.hero{min-height:0;padding-bottom:70px}.hero h1{font-size:clamp(54px,10vw,90px)}}
+@media(max-width:580px){.top{height:72px}.brand{font-size:29px}.hero{padding:16px 0 60px}.hero h1{font-size:clamp(47px,12vw,68px);line-height:.86}.poster-routes .route-dot{width:40px;height:40px;font-size:26px}.poster-routes{gap:5px;max-width:300px}.card{grid-template-columns:58px 1fr}.cover:before{width:44px;height:44px;font-size:28px}.card h3{font-size:32px}.corner-mark{font-size:10px}}
+
