@@ -1,0 +1,59 @@
+:root{--ink:#111;--muted:#5d6268;--line:#c8cbd0;--paper:#f1f2f2;--green:#111;--soft:#e9eaec;--gold:#ffca00}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;line-height:1.5}
+button,input,textarea,select{font-family:inherit}
+header{background:#101114;border-bottom:0;color:white}
+.top{height:88px}
+.brand{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:37px;font-weight:800;letter-spacing:-2.6px;color:white;line-height:1}
+.brand i{color:#ffca00}
+.nav{gap:24px}.nav a,.nav .linkbtn{color:#f6f6f6;font:700 12px/1.2 "Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase}
+.nav a:hover,.nav .linkbtn:hover{color:#ffca00}
+.btn{background:#ffca00;color:#111;border-radius:0;font:800 12px/1.2 "Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:.04em;padding:14px 18px;text-transform:uppercase}
+.btn:hover{background:#f4b900}
+.route-strip{background:#27292d;color:#fff;border-bottom:7px solid #ffca00}
+.route-strip .wrap{display:flex;align-items:center;gap:16px;min-height:46px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.route-dot{display:inline-flex;align-items:center;justify-content:center;flex:none;width:26px;height:26px;border-radius:50%;background:#ee352e;color:#fff;font-size:15px;line-height:1;font-weight:800;letter-spacing:0}
+.route-dot.blue{background:#2850ad}.route-dot.green{background:#00933c}.route-dot.yellow{background:#fccc0a;color:#111}
+.route-arrow{margin-left:auto;font-size:27px;line-height:1}
+.hero{grid-template-columns:minmax(0,1fr) 330px;gap:45px;align-items:stretch;padding:0;border-bottom:8px solid #111;background:#fff}
+.hero>div:first-child{padding:66px 0 62px}
+.eyebrow,.owner,.meta{font:800 12px/1.2 "Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:.07em;text-transform:uppercase;color:#41454a}
+.hero .eyebrow{display:inline-flex;align-items:center;gap:9px;color:#111}
+.hero .eyebrow:before{content:"I";display:inline-flex;align-items:center;justify-content:center;width:29px;height:29px;border-radius:50%;background:#ee352e;color:white;font-size:16px;letter-spacing:0}
+.hero h1{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:clamp(54px,7vw,92px);font-weight:800;letter-spacing:-.055em;line-height:.98;margin:29px 0 22px}
+.hero h1 em{font-style:normal}
+.hero p{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#393e42;font-size:19px;line-height:1.42;max-width:580px}
+.owner{margin-top:26px;color:#555}
+.art{height:auto;min-height:340px;margin:0;border-radius:0;background:#111;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.art:before{content:"I";position:static;width:190px;height:190px;border-radius:50%;background:#ee352e;box-shadow:none;display:flex;align-items:center;justify-content:center;font:800 130px/1 "Helvetica Neue",Helvetica,Arial,sans-serif;color:#fff}
+.art:after{content:"DOWNTOWN\A & BROOKLYN";white-space:pre;position:absolute;inset:auto 0 0;transform:none;background:#ffca00;color:#111;padding:14px 18px;text-align:center;font:800 13px/1.15 "Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:.04em}
+.sectionbar{padding:48px 0 19px;border-bottom:5px solid #111;margin-bottom:22px;align-items:center}
+.sectionbar h2{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:800;font-size:35px;line-height:1.05;letter-spacing:-.04em;margin-top:6px}
+.search,.field,.editor{background:#fff;color:#111;border:2px solid #6b6f74;border-radius:0;outline-color:#2850ad}
+.search{font:600 13px "Helvetica Neue",Helvetica,Arial,sans-serif;padding:12px 14px}
+.grid{gap:14px}
+.card{border:2px solid #111;min-height:340px;box-shadow:5px 5px 0 #111}
+.cover{height:95px;background:#111!important;border-bottom:2px solid #111;display:flex;align-items:center;padding:0 22px}
+.cover:before{content:"A";display:flex;align-items:center;justify-content:center;width:57px;height:57px;border-radius:50%;background:#2850ad;color:#fff;font:800 34px/1 "Helvetica Neue",Helvetica,Arial,sans-serif}
+.cover.b:before{content:"C";background:#00933c}.cover.c:before{content:"7";background:#b933ad}
+.cover:after{content:"LOCAL  •  PERSONAL BLOG";margin-left:14px;color:#fff;font:800 11px "Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:.08em}
+.cardbody{padding:22px 22px 18px}
+.card h3{font:800 27px/1.13 "Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:-.045em;margin:12px 0}
+.card p{font:400 14px/1.5 "Helvetica Neue",Helvetica,Arial,sans-serif;color:#4c5155}
+.cardfoot{border-top:2px solid #111;font:700 11px "Helvetica Neue",Helvetica,Arial,sans-serif;color:#555}
+.linkbtn{font:800 11px "Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:.04em;color:#2850ad}
+.linkbtn:hover{text-decoration:underline}
+footer{background:#111;color:#fff;border:0;font:700 12px "Helvetica Neue",Helvetica,Arial,sans-serif;padding:28px 0}
+.corner-mark{background:#ffca00;color:#111;border-radius:0;box-shadow:none;font:800 13px "Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:.05em;padding:11px 16px}
+.overlay{background:#08090bdc}.panel{background:#f5f5f4;border:5px solid #111;box-shadow:12px 12px 0 #ffca00}
+.panelhead{border-bottom:4px solid #111}.panelhead h2,.article h1,.article h2{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:800;letter-spacing:-.04em}
+.panelhead h2{font-size:32px}.close{font-family:Arial,sans-serif;font-weight:800;color:#111}
+.toolbar{background:#dedfe1;border:2px solid #6b6f74;border-bottom:0}.toolbar button,.toolbar select{border:1px solid #777;border-radius:0;font:700 12px "Helvetica Neue",Helvetica,Arial,sans-serif}
+.editor{border:2px solid #6b6f74;font-size:16px;line-height:1.6}
+.article .body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;line-height:1.65}.article .body a{color:#2850ad}.article .body blockquote{border-left:6px solid #ffca00;color:#333}
+.attachment{background:#ffca00;color:#111;font:800 12px "Helvetica Neue",Helvetica,Arial,sans-serif}.comment{border-top:2px solid #111}.comment strong,.hint,.status{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}
+.danger{color:#b42428}
+@media(max-width:800px){.hero{grid-template-columns:1fr}.hero>div:first-child{padding:52px 0}.art{display:none}.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:580px){.top{height:72px}.brand{font-size:31px}.nav{gap:9px}.nav .btn{padding:10px;font-size:10px}.route-strip .wrap{gap:9px;font-size:10px}.route-strip .route-dot{width:22px;height:22px;font-size:12px}.route-arrow{font-size:20px}.hero h1{font-size:57px}.grid{grid-template-columns:1fr}.sectionbar{align-items:stretch}.sectionbar h2{font-size:31px}.cover{height:80px}.card{min-height:300px}.panel{box-shadow:5px 5px 0 #ffca00}}
+
